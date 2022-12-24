@@ -1,0 +1,16 @@
+assign 문장을 이용해 4 by 1 mux를 디자인하세요.
+
+신호 리스트는 다음과 같습니다.
+input [2:0] din0
+input [2:0] din1
+input [1:0] sel
+output [2:0] dout
+
+sel값이 각각
+--
+0일 때, din0 + din1
+1일 때, din0 - din1 (2의 보수화를 이용한 뺄셈)
+2일 때, din0 (AND) din1
+3일 때, din0를 1비트 오른쪽 시프트 ( << 연산 사용하지 말고)
+--
+를 dout으로 출력하세요. 
